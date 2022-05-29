@@ -1,0 +1,31 @@
+db01:
+  datasource:
+    poolName: Pool01
+    jdbcUrl: jdbc:postgresql://localhost:5001/postgres01
+    username: postgres01
+    password: postgres01
+    driverClassName: org.postgresql.Driver
+    autoCommit: false
+    connectionTimeout: 500
+  jdbctemplate:
+    queryTimeout: 1
+    maxRows: 10
+    fetchSize: 10
+db02:
+  datasource:
+    poolName: Pool02
+    jdbcUrl: jdbc:postgresql://localhost:5002/postgres02
+    username: postgres02
+    password: postgres02
+    driverClassName: org.postgresql.Driver
+    autoCommit: false
+    connectionTimeout: 500
+  jdbctemplate:
+    queryTimeout: 1
+    maxRows: 10
+    fetchSize: 10
+
+logging:
+  level:
+    com.example.springbootmultidatasource: trace
+    com.zaxxer: trace
