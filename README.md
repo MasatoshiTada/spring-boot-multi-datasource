@@ -1,6 +1,9 @@
 Spring Bootで `DataSource` を2つ作るサンプル
 =========================================
 
+# 解説ブログ
+[Spring BootでDataSourceのBeanを2つ作る]()
+
 # 環境
 - JDK 17
 - Spring Boot 2.7.0
@@ -20,7 +23,7 @@ docker compose -f docker-compose-postgres.yaml stop
 ```
 
 # 起動
-`SpringBootMultiDatasourceApplication` から起動
+`SpringBootMultiDatasourcesApplication` クラスから起動
 
 または
 
